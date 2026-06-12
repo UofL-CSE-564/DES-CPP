@@ -7,7 +7,7 @@ A C++17 implementation of the DES encryption standard that can be imported by ot
 - `include/des/DES.hpp` - public `DES` class API
 - `src/` - DES implementation
 - `tests/` - GoogleTest unit tests
-- `example/` - small executable showing block encryption/decryption
+- `example/` - small executable showing file encryption/decryption
 
 ## Build and test
 
@@ -20,8 +20,11 @@ ctest --test-dir build --output-on-failure
 ## Run the example
 
 ```zsh
-./build/example/des_cpp_example
+cd build/example
+./des_cpp_example
 ```
+
+The example reads `sample.txt`, writes encrypted DES blocks to `sample.txt.des`, and decrypts them into `sample.roundtrip.txt`.
 
 ## Basic usage
 
