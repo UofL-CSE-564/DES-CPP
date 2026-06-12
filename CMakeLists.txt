@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 project(DES-CPP
-	VERSION 0.1.0
+	VERSION 1.0.0
 	DESCRIPTION "A C++ implementation of the DES encryption standard"
 	LANGUAGES CXX
 )
